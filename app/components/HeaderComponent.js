@@ -6,19 +6,20 @@ export default class HeaderComponent extends React.Component {
     render() {
         return(
             <Container>
-                <Header>
+                <Header style={{height: 70, paddingTop: 20}}>
+ 
                     <Left>
                         <Button transparent>
-                            <Icon name='menu'/>
+                            <Icon name='menu' />
                         </Button>
                     </Left>
                     <Body>
-                        <Title>Lyrics Viewer</Title>
+                        <Title>{this.props.title}</Title>
                     </Body>
                     <Right />
                 </Header>
             </Container>
-        )
+        );
     }
 }
 
